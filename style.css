@@ -1,3 +1,7 @@
+/* =========================================================
+   MODERN SAVES — GLOBAL STYLES
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +17,7 @@ body {
     background: #ffffff;
     color: #111111;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -20,62 +25,233 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
+img {
+    max-width: 100%;
+    display: block;
+}
 
-.navbar {
-    height: 72px;
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container {
+    width: min(1100px, 88%);
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER / NAVIGATION
+   ========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid #eeeeee;
+}
+
+.nav {
+    min-height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6%;
-    border-bottom: 1px solid #eeeeee;
-    position: sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    z-index: 100;
+    gap: 24px;
 }
 
 .logo {
     font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-weight: 750;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
 }
 
-.navbar nav {
+.nav-links {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 28px;
     font-size: 14px;
     color: #555555;
 }
 
-.navbar nav a:hover {
+.nav-links a {
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
     color: #111111;
 }
 
-.nav-button,
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #111111;
+    color: #ffffff;
+    padding: 11px 18px;
+    min-height: 42px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 650;
+    white-space: nowrap;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    background: #222222;
+}
+
+/* =========================================================
+   GOOGLE TRANSLATE
+   ========================================================= */
+
+#google_translate_element {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#google_translate_element .goog-te-gadget {
+    font-family: inherit !important;
+    font-size: 0 !important;
+    white-space: nowrap;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 108px;
+    height: 40px;
+    padding: 0 12px !important;
+    border: 1px solid #e2e2e2 !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    box-sizing: border-box;
+    font-family: inherit !important;
+    font-size: 13px !important;
+    color: #111111 !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+#google_translate_element .goog-te-gadget-simple:hover {
+    border-color: #cfcfcf !important;
+    background: #f8f8f8 !important;
+}
+
+#google_translate_element .goog-te-gadget-simple img {
+    display: none !important;
+}
+
+#google_translate_element .goog-te-gadget-simple span {
+    border: none !important;
+    color: #111111 !important;
+    font-family: inherit !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 12px 21px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 650;
+    line-height: 1.2;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.button-primary:hover {
+    background: #222222;
+    border-color: #222222;
+}
+
+.button-secondary {
+    background: #ffffff;
+    color: #111111;
+    border-color: #dddddd;
+}
+
+.button-secondary:hover {
+    background: #f7f7f7;
+    border-color: #cfcfcf;
+}
+
 .primary-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: #111111;
     color: #ffffff;
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 14px;
-    font-weight: 600;
-    transition: 0.2s ease;
+    font-weight: 650;
 }
 
-.nav-button:hover,
-.primary-button:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 650;
 }
 
-/* HERO */
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .hero {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 110px 6% 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,9 +259,18 @@ a {
     align-items: center;
 }
 
+.hero:not(:has(.product-preview)) {
+    grid-template-columns: 1fr;
+    max-width: 1100px;
+}
+
+.hero:not(:has(.product-preview)) > div {
+    max-width: 800px;
+}
+
 .eyebrow {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 750;
     letter-spacing: 2px;
     color: #777777;
     margin-bottom: 18px;
@@ -95,7 +280,7 @@ a {
     font-size: clamp(44px, 6vw, 76px);
     line-height: 1.02;
     letter-spacing: -4px;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .hero h1 span {
@@ -105,32 +290,23 @@ a {
 
 .hero-text {
     margin-top: 26px;
-    max-width: 580px;
+    max-width: 650px;
     font-size: 18px;
+    line-height: 1.65;
     color: #666666;
 }
 
-.hero-buttons {
+.hero-buttons,
+.hero-actions {
     display: flex;
     gap: 14px;
     margin-top: 34px;
     flex-wrap: wrap;
 }
 
-.secondary-button {
-    display: inline-block;
-    padding: 12px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.secondary-button:hover {
-    background: #f5f5f5;
-}
-
-/* PRODUCT PREVIEW */
+/* =========================================================
+   PRODUCT PREVIEW
+   ========================================================= */
 
 .product-preview {
     display: flex;
@@ -143,6 +319,7 @@ a {
     border: 1px solid #dddddd;
     border-radius: 14px;
     overflow: hidden;
+    background: #ffffff;
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.12);
 }
 
@@ -171,7 +348,7 @@ a {
 
 .preview-title {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 650;
 }
 
 .preview-content {
@@ -227,26 +404,28 @@ a {
     margin-top: 4px;
 }
 
-/* SECTIONS */
+/* =========================================================
+   SECTIONS
+   ========================================================= */
 
 .section {
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
     padding: 110px 6%;
 }
 
 .section-light {
     max-width: none;
     background: #f7f7f7;
-    padding-left: calc((100% - 980px) / 2);
-    padding-right: calc((100% - 980px) / 2);
+    padding-left: max(6%, calc((100% - 980px) / 2));
+    padding-right: max(6%, calc((100% - 980px) / 2));
 }
 
 .section h2 {
     font-size: clamp(34px, 5vw, 54px);
     line-height: 1.1;
     letter-spacing: -2px;
-    max-width: 750px;
+    max-width: 800px;
 }
 
 .section-intro {
@@ -256,7 +435,21 @@ a {
     font-size: 17px;
 }
 
-/* STEPS */
+.section-heading {
+    max-width: 800px;
+}
+
+.section-heading > p:not(.eyebrow) {
+    margin-top: 20px;
+    max-width: 700px;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   STEPS
+   ========================================================= */
 
 .steps {
     display: grid;
@@ -282,9 +475,12 @@ a {
     font-size: 15px;
 }
 
-/* FEATURES */
+/* =========================================================
+   FEATURES
+   ========================================================= */
 
-.feature-grid {
+.feature-grid,
+.features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
@@ -296,18 +492,32 @@ a {
     border: 1px solid #e5e5e5;
     padding: 30px;
     border-radius: 12px;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    border-color: #d6d6d6;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
 }
 
 .feature-card h3 {
     font-size: 20px;
+    line-height: 1.3;
     margin-bottom: 10px;
 }
 
 .feature-card p {
     color: #666666;
+    line-height: 1.65;
 }
 
-/* AI */
+/* =========================================================
+   AI
+   ========================================================= */
 
 .ai-section {
     text-align: center;
@@ -332,6 +542,7 @@ a {
     display: flex;
     gap: 10px;
     font-size: 14px;
+    background: #ffffff;
 }
 
 .ai-result {
@@ -347,7 +558,9 @@ a {
     font-size: 14px;
 }
 
-/* USE CASES */
+/* =========================================================
+   USE CASES
+   ========================================================= */
 
 .use-case-grid {
     display: grid;
@@ -365,10 +578,116 @@ a {
     color: #666666;
 }
 
-/* FAQ */
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding: 38px;
+    border: 1px solid #e2e2e2;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    border-color: #d3d3d3;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card .eyebrow {
+    margin-bottom: 12px;
+}
+
+.pricing-card h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -1.8px;
+    margin-bottom: 12px;
+}
+
+.pricing-description {
+    max-width: 450px;
+    min-height: 54px;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 25px;
+    font-size: 36px;
+    font-weight: 750;
+    letter-spacing: -1.5px;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #777777;
+}
+
+.pricing-list {
+    list-style: none;
+    margin: 28px 0 32px;
+    display: grid;
+    gap: 13px;
+}
+
+.pricing-list li {
+    position: relative;
+    padding-left: 23px;
+    color: #444444;
+    font-size: 15px;
+}
+
+.pricing-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    color: #111111;
+}
+
+.pricing-card .button {
+    width: 100%;
+    margin-top: auto;
+}
+
+.pricing-note {
+    margin-top: 14px;
+    text-align: center;
+    color: #888888;
+    font-size: 13px;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
 
 .faq {
-    max-width: 750px;
+    max-width: 800px;
     margin-top: 45px;
 }
 
@@ -379,15 +698,51 @@ details {
 
 summary {
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 650;
+    list-style-position: outside;
 }
 
 details p {
     margin-top: 12px;
     color: #666666;
+    line-height: 1.7;
 }
 
-/* FINAL CTA */
+/* =========================================================
+   CTA BOX
+   ========================================================= */
+
+.cta-box {
+    text-align: center;
+    padding: 75px 45px;
+    border-radius: 18px;
+    background: #f6f6f6;
+    border: 1px solid #e8e8e8;
+}
+
+.cta-box .eyebrow {
+    margin-bottom: 16px;
+}
+
+.cta-box h2 {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.cta-box p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    color: #666666;
+    font-size: 17px;
+}
+
+.cta-box .button {
+    margin-top: 4px;
+}
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
 
 .final-cta {
     text-align: center;
@@ -413,80 +768,258 @@ details p {
     margin: 20px 0 30px;
 }
 
-.final-cta .primary-button {
+.final-cta .primary-button,
+.final-cta .button-primary {
     background: #ffffff;
     color: #111111;
+    border-color: #ffffff;
 }
 
-/* FOOTER */
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
+.footer,
 footer {
     padding: 50px 6%;
-    text-align: center;
-    border-top: 1px solid #222222;
     background: #111111;
     color: #ffffff;
+    border-top: 1px solid #222222;
 }
 
+.footer .container,
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer p,
 footer p {
     color: #999999;
-    margin-top: 10px;
     font-size: 14px;
 }
 
+.footer .container > div,
+footer .container > div {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.footer a,
+footer a {
+    color: #bbbbbb;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover,
+footer a:hover {
+    color: #ffffff;
+}
+
+.footer .copyright,
 footer .copyright {
     margin-top: 25px;
     font-size: 12px;
 }
 
-/* INNER PAGES */
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
-.hero:not(:has(.product-preview)) {
-    grid-template-columns: 1fr;
-    max-width: 1000px;
+@media (max-width: 1050px) {
+
+    .nav {
+        gap: 14px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-button {
+        padding: 10px 14px;
+    }
+
+    #google_translate_element .goog-te-gadget-simple {
+        min-width: 100px;
+    }
 }
 
-.hero:not(:has(.product-preview)) > div {
-    max-width: 760px;
-}
+@media (max-width: 900px) {
 
-/* MOBILE */
+    .nav {
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 14px;
+        font-size: 13px;
+    }
+
+    .hero {
+        gap: 45px;
+    }
+
+    .pricing-card {
+        padding: 30px;
+    }
+}
 
 @media (max-width: 800px) {
 
-    .navbar {
-        padding: 0 5%;
+    .container {
+        width: 90%;
     }
 
-    .navbar nav {
+    .nav {
+        min-height: 68px;
+    }
+
+    .nav-links {
         display: none;
+    }
+
+    .nav-button {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    #google_translate_element {
+        margin-left: 0;
+    }
+
+    #google_translate_element .goog-te-gadget-simple {
+        min-width: 100px;
+        height: 38px;
     }
 
     .hero {
         grid-template-columns: 1fr;
-        padding-top: 70px;
+        padding: 75px 5% 70px;
     }
 
     .hero h1 {
-        letter-spacing: -2px;
+        letter-spacing: -2.5px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .hero-buttons,
+    .hero-actions {
+        margin-top: 28px;
+    }
+
+    .section {
+        padding: 80px 5%;
+    }
+
+    .section h2 {
+        letter-spacing: -1.5px;
     }
 
     .steps {
         grid-template-columns: 1fr;
         gap: 35px;
+        margin-top: 45px;
     }
 
     .feature-grid,
-    .use-case-grid {
+    .features-grid,
+    .use-case-grid,
+    .pricing-grid {
         grid-template-columns: 1fr;
     }
 
-    .section-light {
-        padding-left: 6%;
-        padding-right: 6%;
+    .feature-grid,
+    .features-grid {
+        margin-top: 40px;
+    }
+
+    .use-case-grid {
+        margin-top: 40px;
+    }
+
+    .pricing-grid {
+        gap: 18px;
+    }
+
+    .pricing-card {
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .pricing-description {
+        min-height: auto;
+    }
+
+    .cta-box {
+        padding: 55px 25px;
+    }
+
+    .footer .container,
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .container > div,
+    footer .container > div {
+        justify-content: center;
     }
 
     .preview-sidebar {
         display: none;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    #google_translate_element .goog-te-gadget-simple {
+        min-width: 94px;
+        padding: 0 10px !important;
+        font-size: 12px !important;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 12vw, 58px);
+        letter-spacing: -2px;
+    }
+
+    .hero-buttons,
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .button,
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .pricing-card h2 {
+        font-size: 36px;
+    }
+
+    .price {
+        font-size: 32px;
+    }
+
+    .cta-box h2 {
+        font-size: 34px;
     }
 }

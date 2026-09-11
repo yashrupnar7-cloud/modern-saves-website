@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Modern Saves — Save Anything From the Web</title>
+    <title>Modern Saves — Bookmark Manager for Chrome</title>
 
     <meta
         name="description"
-        content="Modern Saves helps you save anything from the web and find it later with powerful search and AI Search."
+        content="Modern Saves is a bookmark manager for Chrome that helps you save, organize, search and rediscover websites, articles, videos, products and ideas with powerful AI Search."
     >
 
     <meta
         name="keywords"
-        content="save anything, save web pages, bookmark manager, bookmark organizer, Chrome extension, AI search"
+        content="best bookmark manager, best bookmark manager chrome, Chrome bookmark manager, bookmark manager extension, bookmark search, bookmark organizer, manage bookmarks, manage bookmarks in Chrome, organize bookmarks in Chrome, how to manage bookmarks in Chrome, AI bookmark manager"
     >
+
+    <meta name="robots" content="index, follow">
 
     <link
         rel="canonical"
         href="https://modern-saves-website-76wo.vercel.app/"
     >
 
-    <meta property="og:title" content="Modern Saves — Save Anything From the Web">
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Modern Saves — Bookmark Manager for Chrome"
+    >
 
     <meta
         property="og:description"
-        content="Save anything from the web and find it when you need it with Modern Saves."
+        content="Save, organize, search and rediscover anything from the web with Modern Saves, a bookmark manager for Chrome with AI Search."
     >
 
     <meta property="og:type" content="website">
@@ -35,12 +41,60 @@
         content="https://modern-saves-website-76wo.vercel.app/"
     >
 
+    <meta
+        property="og:site_name"
+        content="Modern Saves"
+    >
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+
+    <meta
+        name="twitter:title"
+        content="Modern Saves — Bookmark Manager for Chrome"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Save, organize, search and rediscover anything from the web with Modern Saves."
+    >
+
+    <!-- Sentry -->
+    <script
+        src="https://js.sentry-cdn.com/95d6eaae43333cdac1455194fea2e2d2.min.js"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Modern Saves",
+        "description": "Modern Saves is a bookmark manager for Chrome that helps users save, organize, search and rediscover anything from the web with powerful AI Search.",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "url": "https://modern-saves-website-76wo.vercel.app/",
+        "downloadUrl": "https://chromewebstore.google.com/detail/modern-saves/fnjaghebjbpdjbkgcealmfcdiagnfbpa"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Modern Saves",
+        "url": "https://modern-saves-website-76wo.vercel.app/"
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="header">
+
     <div class="container nav">
 
         <a href="index.html" class="logo">
@@ -48,11 +102,27 @@
         </a>
 
         <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="ai-search.html">AI Search</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="about.html">About</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="features.html">
+                Features
+            </a>
+
+            <a href="ai-search.html">
+                AI Search
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
         </nav>
 
         <a
@@ -64,7 +134,11 @@
             Get Modern Saves
         </a>
 
+        <!-- Google Translate -->
+        <div id="google_translate_element"></div>
+
     </div>
+
 </header>
 
 
@@ -73,10 +147,11 @@
 <!-- HERO -->
 
 <section class="hero">
+
     <div class="container">
 
         <p class="eyebrow">
-            YOUR INTERNET MEMORY
+            CHROME BOOKMARK MANAGER
         </p>
 
         <h1>
@@ -85,9 +160,10 @@
         </h1>
 
         <p class="hero-text">
-            Modern Saves helps you save websites, articles, videos,
-            products, ideas and anything else you discover online —
-            then find it again with powerful search and AI Search.
+            Modern Saves is a bookmark manager for Chrome that helps you
+            save websites, articles, videos, products, ideas and anything
+            else you discover online — then find it again with powerful
+            search and AI Search.
         </p>
 
         <div class="hero-buttons">
@@ -101,19 +177,24 @@
                 Add to Chrome
             </a>
 
-            <a href="features.html" class="button button-secondary">
+            <a
+                href="features.html"
+                class="button button-secondary"
+            >
                 Explore Features
             </a>
 
         </div>
 
     </div>
+
 </section>
 
 
 <!-- PRODUCT PREVIEW -->
 
 <section class="section">
+
     <div class="container">
 
         <div class="product-preview">
@@ -150,6 +231,7 @@
         </div>
 
     </div>
+
 </section>
 
 
@@ -430,38 +512,58 @@
         <div class="features-grid">
 
             <article class="feature-card">
-                <h3>Learning</h3>
+
+                <h3>
+                    Learning
+                </h3>
+
                 <p>
                     Save tutorials, courses, documentation and
                     useful educational resources.
                 </p>
+
             </article>
 
 
             <article class="feature-card">
-                <h3>Ideas</h3>
+
+                <h3>
+                    Ideas
+                </h3>
+
                 <p>
                     Keep inspiration, business ideas, projects and
                     interesting discoveries in one place.
                 </p>
+
             </article>
 
 
             <article class="feature-card">
-                <h3>Shopping</h3>
+
+                <h3>
+                    Shopping
+                </h3>
+
                 <p>
                     Save products and things you want to compare
                     or buy later.
                 </p>
+
             </article>
 
 
             <article class="feature-card">
-                <h3>Entertainment</h3>
+
+                <h3>
+                    Entertainment
+                </h3>
+
                 <p>
                     Save videos, music, articles and other things
                     you want to come back to.
                 </p>
+
             </article>
 
         </div>
@@ -493,6 +595,7 @@
         <div class="faq-list">
 
             <details>
+
                 <summary>
                     What is Modern Saves?
                 </summary>
@@ -507,6 +610,7 @@
 
 
             <details>
+
                 <summary>
                     How is Modern Saves different from browser bookmarks?
                 </summary>
@@ -522,6 +626,7 @@
 
 
             <details>
+
                 <summary>
                     What is AI Search?
                 </summary>
@@ -536,6 +641,38 @@
 
 
             <details>
+
+                <summary>
+                    How can I organize bookmarks in Chrome?
+                </summary>
+
+                <p>
+                    Modern Saves lets you save websites and online
+                    discoveries into organized categories and search
+                    your collection later, making a growing bookmark
+                    library easier to manage.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Is Modern Saves a Chrome bookmark manager?
+                </summary>
+
+                <p>
+                    Yes. Modern Saves is a bookmark manager for Chrome
+                    designed to make saving, organizing and finding
+                    online content easier.
+                </p>
+
+            </details>
+
+
+            <details>
+
                 <summary>
                     Is Modern Saves free?
                 </summary>
@@ -589,6 +726,7 @@
 
 </section>
 
+
 </main>
 
 
@@ -601,16 +739,58 @@
         </p>
 
         <div>
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="ai-search.html">AI Search</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="about.html">About</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="features.html">
+                Features
+            </a>
+
+            <a href="ai-search.html">
+                AI Search
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
         </div>
 
     </div>
 
 </footer>
+
+
+<!-- Google Translate -->
+
+<script type="text/javascript">
+
+    function googleTranslateElementInit() {
+
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,pt,fr,de,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+            'google_translate_element'
+        );
+
+    }
+
+</script>
+
+
+<script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
 
 
 <script src="script.js"></script>

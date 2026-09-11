@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Modern Saves Features — Save and Organize Anything</title>
+    <title>Modern Saves Features — Bookmark Manager for Chrome</title>
 
     <meta
         name="description"
-        content="Explore Modern Saves features for saving, organizing and searching anything from the web, including AI-powered bookmark search."
-    >
-
-    <meta
-        name="keywords"
-        content="bookmark manager, bookmark organizer, save webpages, save anything from the web, Chrome bookmark manager, AI bookmark search"
+        content="Explore Modern Saves features for saving, organizing, searching and managing bookmarks in Chrome, including powerful AI Search."
     >
 
     <link
@@ -21,16 +16,53 @@
         href="https://modern-saves-website-76wo.vercel.app/features.html"
     >
 
-    <meta property="og:title" content="Modern Saves Features">
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Modern Saves Features — Bookmark Manager for Chrome"
+    >
+
     <meta
         property="og:description"
-        content="Save anything from the web, organize your collection and find saved content with powerful search and AI Search."
+        content="Save, organize, search and manage your bookmarks in Chrome with Modern Saves."
     >
+
     <meta property="og:type" content="website">
+
     <meta
         property="og:url"
         content="https://modern-saves-website-76wo.vercel.app/features.html"
     >
+
+    <!-- Twitter -->
+    <meta
+        name="twitter:card"
+        content="summary"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Modern Saves Features — Bookmark Manager for Chrome"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Save, organize, search and manage your bookmarks in Chrome with Modern Saves."
+    >
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Modern Saves",
+        "description": "A bookmark manager for Chrome that helps users save, organize, search and rediscover content from the web.",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "url": "https://modern-saves-website-76wo.vercel.app/features.html",
+        "downloadUrl": "https://chromewebstore.google.com/detail/modern-saves/fnjaghebjbpdjbkgcealmfcdiagnfbpa"
+    }
+    </script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,6 +70,7 @@
 <body>
 
 <header class="header">
+
     <div class="container nav">
 
         <a href="index.html" class="logo">
@@ -45,11 +78,27 @@
         </a>
 
         <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="ai-search.html">AI Search</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="about.html">About</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="features.html">
+                Features
+            </a>
+
+            <a href="ai-search.html">
+                AI Search
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
         </nav>
 
         <a
@@ -61,43 +110,61 @@
             Get Modern Saves
         </a>
 
+        <!-- Language / Translate -->
+        <div id="google_translate_element"></div>
+
     </div>
+
 </header>
 
 
 <main>
 
+<!-- HERO -->
+
 <section class="hero">
+
     <div class="container">
 
-        <p class="eyebrow">FEATURES</p>
+        <p class="eyebrow">
+            CHROME BOOKMARK MANAGER
+        </p>
 
         <h1>
-            A better way to save and
-            <span>find anything from the web.</span>
+            A better way to manage your
+            <span>bookmarks in Chrome.</span>
         </h1>
 
         <p class="hero-text">
-            Modern Saves gives you one place to save, organize and
-            rediscover the things you find online.
+            Modern Saves is a bookmark manager extension for Chrome
+            that helps you save, organize, search and rediscover
+            the things you find online.
         </p>
 
     </div>
+
 </section>
 
 
+<!-- CORE FEATURES -->
+
 <section class="section">
+
     <div class="container">
 
         <div class="features-grid">
 
             <article class="feature-card">
 
-                <h3>Save anything from the web</h3>
+                <h3>
+                    Save anything from the web
+                </h3>
 
                 <p>
                     Save articles, videos, products, tutorials,
                     ideas and useful websites while you browse.
+                    Keep the things you discover instead of losing
+                    them in an endless browser history.
                 </p>
 
             </article>
@@ -105,11 +172,15 @@
 
             <article class="feature-card">
 
-                <h3>Organize your saves</h3>
+                <h3>
+                    Organize your bookmarks
+                </h3>
 
                 <p>
-                    Keep your saved content organized with simple
-                    categories that make sense for you.
+                    Organize saved websites and bookmarks with
+                    simple categories that make sense for you.
+                    Keep learning resources, products, ideas,
+                    videos and other discoveries easier to find.
                 </p>
 
             </article>
@@ -117,11 +188,15 @@
 
             <article class="feature-card">
 
-                <h3>Powerful search</h3>
+                <h3>
+                    Powerful bookmark search
+                </h3>
 
                 <p>
                     Search through your saved content instead of
                     scrolling through a huge list of bookmarks.
+                    Find websites and information quickly when
+                    you need them again.
                 </p>
 
             </article>
@@ -129,11 +204,15 @@
 
             <article class="feature-card">
 
-                <h3>AI Search</h3>
+                <h3>
+                    AI Search
+                </h3>
 
                 <p>
                     Find saved content based on meaning and context,
                     even when you don't remember the exact title.
+                    Search for what you remember instead of relying
+                    only on exact keywords.
                 </p>
 
             </article>
@@ -141,11 +220,14 @@
 
             <article class="feature-card">
 
-                <h3>Save while you browse</h3>
+                <h3>
+                    Save while you browse
+                </h3>
 
                 <p>
                     Capture useful discoveries quickly without
                     interrupting what you're doing online.
+                    Save first and organize your collection later.
                 </p>
 
             </article>
@@ -153,11 +235,14 @@
 
             <article class="feature-card">
 
-                <h3>Your internet memory</h3>
+                <h3>
+                    Your internet memory
+                </h3>
 
                 <p>
-                    Build a personal library of the websites and
-                    information you discover across the internet.
+                    Build a personal library of the websites,
+                    information and ideas you discover across
+                    the internet.
                 </p>
 
             </article>
@@ -165,8 +250,11 @@
         </div>
 
     </div>
+
 </section>
 
+
+<!-- WHY MODERN SAVES -->
 
 <section class="section">
 
@@ -174,22 +262,30 @@
 
         <div class="section-heading">
 
-            <p class="eyebrow">WHY MODERN SAVES?</p>
+            <p class="eyebrow">
+                WHY MODERN SAVES?
+            </p>
 
             <h2>
-                Stop treating your bookmarks like a storage drawer.
+                A bookmark manager built for how you use the web.
             </h2>
 
             <p>
-                Traditional bookmarks can quickly turn into long lists
-                of links you rarely revisit. Modern Saves is designed
-                around a simpler idea: save now and figure out where
-                it belongs later.
+                Traditional Chrome bookmarks work well for a small
+                collection, but large bookmark libraries can become
+                difficult to organize and search.
             </p>
 
             <p>
-                When you need something again, search your collection
-                and find the content you're looking for.
+                Modern Saves gives you a dedicated place to save the
+                websites, articles, videos, products and ideas you
+                discover every day.
+            </p>
+
+            <p>
+                Instead of trying to remember exactly where you saved
+                something, you can search your collection and find it
+                when you need it.
             </p>
 
         </div>
@@ -199,13 +295,53 @@
 </section>
 
 
+<!-- MANAGE BOOKMARKS -->
+
 <section class="section">
 
     <div class="container">
 
         <div class="section-heading">
 
-            <p class="eyebrow">AI SEARCH</p>
+            <p class="eyebrow">
+                MANAGE BOOKMARKS IN CHROME
+            </p>
+
+            <h2>
+                Keep your bookmarks organized as your collection grows.
+            </h2>
+
+            <p>
+                If you save a lot of websites in Chrome, finding an old
+                bookmark can become frustrating. Modern Saves helps you
+                create a more organized personal library for the content
+                you want to keep.
+            </p>
+
+            <p>
+                Save a page, choose where it belongs, and come back to it
+                later. When you don't remember the exact title, use search
+                or AI Search to help rediscover it.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AI SEARCH -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                AI SEARCH
+            </p>
 
             <h2>
                 Find things by what you remember.
@@ -213,7 +349,9 @@
 
             <p>
                 Instead of remembering an exact webpage title, you can
-                search using the idea or topic you remember.
+                search using the idea, topic or context you remember.
+                This makes finding saved content easier when your memory
+                of the original page is incomplete.
             </p>
 
         </div>
@@ -222,24 +360,41 @@
         <div class="ai-search-example">
 
             <div class="search-example-box">
-                <span class="search-label">Example</span>
+
+                <span class="search-label">
+                    Example
+                </span>
+
                 <strong>
                     "That website about learning Python"
                 </strong>
+
             </div>
 
+
             <div class="search-example-box">
-                <span class="search-label">Example</span>
+
+                <span class="search-label">
+                    Example
+                </span>
+
                 <strong>
                     "The product I wanted to buy"
                 </strong>
+
             </div>
 
+
             <div class="search-example-box">
-                <span class="search-label">Example</span>
+
+                <span class="search-label">
+                    Example
+                </span>
+
                 <strong>
                     "That article about productivity"
                 </strong>
+
             </div>
 
         </div>
@@ -258,13 +413,224 @@
 </section>
 
 
+<!-- USE CASES -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                WHAT CAN YOU SAVE?
+            </p>
+
+            <h2>
+                One bookmark manager for everything you discover.
+            </h2>
+
+            <p>
+                Modern Saves can help you keep different types of
+                online discoveries in one searchable library.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <article class="feature-card">
+
+                <h3>
+                    Learning resources
+                </h3>
+
+                <p>
+                    Save programming tutorials, courses, documentation,
+                    articles and useful educational websites.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>
+                    Ideas and inspiration
+                </h3>
+
+                <p>
+                    Keep business ideas, project inspiration,
+                    design references and interesting discoveries.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>
+                    Products and shopping
+                </h3>
+
+                <p>
+                    Save products you want to compare, research
+                    or buy later without losing the page.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>
+                    Videos and entertainment
+                </h3>
+
+                <p>
+                    Save videos, music, articles and other content
+                    you want to return to later.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="section" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                FAQ
+            </p>
+
+            <h2>
+                Questions about Modern Saves.
+            </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+            <details>
+
+                <summary>
+                    What is Modern Saves?
+                </summary>
+
+                <p>
+                    Modern Saves is a bookmark manager for Chrome that
+                    helps you save, organize, search and rediscover
+                    websites, articles, videos, products and other
+                    content from the web.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Is Modern Saves a Chrome bookmark manager?
+                </summary>
+
+                <p>
+                    Yes. Modern Saves is a Chrome bookmark manager
+                    extension designed to make saving, organizing
+                    and finding online content easier.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    How can I organize bookmarks in Chrome?
+                </summary>
+
+                <p>
+                    Modern Saves lets you save websites into organized
+                    categories and search your collection later.
+                    This can make a growing collection of saved content
+                    easier to manage.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    How is Modern Saves different from Chrome bookmarks?
+                </summary>
+
+                <p>
+                    Modern Saves is designed around saving, organizing
+                    and rediscovering online content. It also includes
+                    powerful search and AI Search to help you find saved
+                    content when you don't remember the exact title.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    What is AI Search?
+                </summary>
+
+                <p>
+                    AI Search helps you find saved content using meaning
+                    and context, so you can search for what you remember
+                    instead of relying only on an exact webpage title.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Is Modern Saves free?
+                </summary>
+
+                <p>
+                    Modern Saves has a free option, with Pro features
+                    available at the current launch price.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
 <section class="section">
 
     <div class="container">
 
         <div class="cta-box">
 
-            <p class="eyebrow">START SAVING</p>
+            <p class="eyebrow">
+                START SAVING
+            </p>
 
             <h2>
                 Build your personal internet memory.
@@ -289,6 +655,7 @@
 
 </section>
 
+
 </main>
 
 
@@ -301,16 +668,56 @@
         </p>
 
         <div>
-            <a href="index.html">Home</a>
-            <a href="features.html">Features</a>
-            <a href="ai-search.html">AI Search</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="about.html">About</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="features.html">
+                Features
+            </a>
+
+            <a href="ai-search.html">
+                AI Search
+            </a>
+
+            <a href="pricing.html">
+                Pricing
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
         </div>
 
     </div>
 
 </footer>
+
+
+<!-- Google Translate -->
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,pt,fr,de,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+            'google_translate_element'
+        );
+    }
+</script>
+
+<script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
